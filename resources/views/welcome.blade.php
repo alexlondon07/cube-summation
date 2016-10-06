@@ -4,7 +4,8 @@
         <title>Laravel</title>
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
+         <!-- Styles -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <style>
             html, body {
                 height: 100%;
@@ -16,7 +17,7 @@
                 width: 100%;
                 display: table;
                 font-weight: 100;
-                font-family: 'Lato';
+                font-family: 'Arial';
             }
 
             .container {
@@ -31,14 +32,20 @@
             }
 
             .title {
-                font-size: 96px;
+                font-size: 50px;
+            }
+
+            a:hover {
+                color: #b73333;
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title"><a href="https://www.hackerrank.com/challenges/cube-summation">Coding Challenge: Cube Summation</a></div>
+                <a type="button" class="btn btn-success" href="/cube_summation">Let's make sums!</a>
             </div>
         </div>
     </body>

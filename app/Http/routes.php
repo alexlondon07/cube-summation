@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('cube_summation', [
+    'as' => 'cube_summation', 'uses' => 'CubeSummationController@showCubeSummation'
+]);
+
+Route::post('cube_summation', [
+    'as' => 'cube_summation', 'uses' => 'CubeSummationController@cubeSummationFromFile'
+]);
