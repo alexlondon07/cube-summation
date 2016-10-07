@@ -44,7 +44,7 @@
     <body>
         <div class="container">
             <div class="content">
-                <div class="title"><a href="https://www.hackerrank.com/challenges/cube-summation">Coding Challenge: Cube Summation</a></div>
+                <div class="title">Coding Challenge:  <a href="https://www.hackerrank.com/challenges/cube-summation">Cube Summation</a></div>
                 <a type="button" class="btn btn-success" href="/cube_summation">Let's make sums!</a>
             </div>
         </div>
