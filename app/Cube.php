@@ -2,6 +2,8 @@
 
 namespace App;
 
+use Exception;
+
 class Cube
 {
     private $n;
@@ -29,10 +31,23 @@ class Cube
     }
 
     function set_cell_value($x, $y, $z, $w){
+        $this->validate_coordinate($x,$y,$z);
         $this->cube[$x-1][$y-1][$z-1] = $w;
     }
 
     function get_cell_value($x, $y, $z){
+        $this->validate_coordinate($x,$y,$z);
         return $this->cube[$x-1][$y-1][$z-1];
-    }   
+    }
+
+    function validate_coordinate($x,$y,$z){
+        if ($this->validate_range($x) && $this->validate_range($y) && $this->validate_range($z))
+            return;
+        throw new Exception("Invalid Cube Coordinate Value, must be 0 >= value <= N", 1);
+        
+    }
+
+    function validate_range($coordinate){
+        return  (($coordinate >= 0) && ($coordinate <= $this->n));
+    }
 }
