@@ -9,8 +9,6 @@ class Cube
     private $n;
     private $cube;
 
-    //TODO validators
-
     function __construct($n_=1){
         $this->n = $n_;
         $this->initialize_cube();
@@ -33,6 +31,7 @@ class Cube
     function set_cell_value($x, $y, $z, $w){
         $this->validate_coordinate($x,$y,$z);
         $this->cube[$x-1][$y-1][$z-1] = $w;
+        return $w;
     }
 
     function get_cell_value($x, $y, $z){
